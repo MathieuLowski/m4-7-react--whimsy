@@ -3,10 +3,13 @@ import styled from "styled-components";
 
 const Stat = ({ num, textLabel }) => (
   <Wrapper>
-    <Num>{num}</Num> {textLabel}
+    <Num>{num}</Num>
+    <StatTag> {textLabel}</StatTag>
   </Wrapper>
 );
-
+const StatTah = styled.div`
+  font-weight: bold;
+`;
 const Wrapper = styled.div`
   font-size: 16px;
   color: rgb(101, 119, 134);
